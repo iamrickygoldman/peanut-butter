@@ -1,0 +1,33 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	box-sizing: border-box;
+}
+html * {
+	box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1em;
+	line-height: 1.25em;
+	font-weight: bold;
+	margin: 0;
+}
+p, li, td, th, dd, dt, span {
+	font-size: 1em;
+	line-height: 1.25em;
+}
+p, li, td, dd, span {
+	font-weight: normal;
+}
+p {
+	margin: 0 0 1em;
+}
+th, dt {
+	font-weight: bold;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
