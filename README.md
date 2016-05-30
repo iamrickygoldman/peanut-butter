@@ -7,7 +7,7 @@ Peanut Butter is minimalist a front end responsive framework designed for progra
     <script src="/path/to/pb-utilities.js"></script>
 
 ## Usage
-##### 12 Column Basic Grid
+#### 12 Column Grid
 To use the grid, simply create a container with the class "pb-jar-smooth" or "pb-jar-chunky". The "pb-row" will make sure to clear all floats, then place the columns inside.
 
     <div class="pb-jar-smooth">
@@ -37,7 +37,7 @@ The class name of the column determines its behavior. All column class names beg
 
 The number determines the width of the column. For example "pb-col-mb-3" will be 3 columns wide. On the 12 column grid, that will be width: 25%.
 
-##### SCSS Customization
+#### SCSS Customization
 The following can all be customized via SCSS variables:
 
 - **responsive breakpoints**
@@ -46,7 +46,7 @@ The following can all be customized via SCSS variables:
 
 To make updating easily, it is recommended all variables are overridden in the pb-variables-override.scss file and the pb-variables.scss file is left untouched. All custom css should be placed in pb-style.scss. The pb-core.scss file imports all of these files and compiles into pb-core.css which should be included in your project.
 
-##### Javascript Utilities
+#### Javascript Utilities
 At this time, there is only one javascript utility included in Peanut Butter - equal heights. Any time two or more elements - columns or not - need to be equal heights, this plugin will responsively set each element's height to match the tallest. To use, simply apply the attribute "data-pb-height" with the same value to all elements. Here is an example:
 
     <div class="pb-col-tb-4" data-pb-height="example1">
