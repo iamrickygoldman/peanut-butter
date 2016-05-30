@@ -50,11 +50,11 @@ To make updating easily, it is recommended all variables are overridden in the p
 At this time, there is only one javascript utility included in Peanut Butter - equal heights. Any time two or more elements - columns or not - need to be equal heights, this plugin will responsively set each element's height to match the tallest. To use, simply apply the attribute "data-pb-height" with the same value to all elements. Here is an example:
 
     <div class="pb-col-tb-4" data-pb-height="example1">
-        <p style="background:red;">Equal Height Column 1</p>
+        
     </div>
     <div class="pb-col-tb-4" data-pb-height="example1">
-        <p style="background:yellow;">I think this should be a huge sentence with lots of verbs and nouns and still be equal in height.</p>
+        
     </div>
     <div class="pb-col-tb-4" data-pb-height="example1">
-        <p style="background:yellow;">Can this column be even longer??? I don't even know what to type here. Maybe some lorem ipsum? Blah, I think you get the point!</p>
+        
     </div>
