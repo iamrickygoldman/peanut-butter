@@ -25,6 +25,8 @@
 }
 
 .pb-row {
+	display: flex;
+	flex-wrap: wrap;
 	margin-left: -1 * $gutter-width;
 	margin-right: -1 * $gutter-width;
 	&:before, &:after {
