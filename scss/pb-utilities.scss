@@ -1,0 +1,58 @@
+/* Mixins */
+@mixin antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+@mixin subpixel {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
+  -o-font-smoothing: auto;
+  font-smoothing: subpixel-antialiased;
+}
+
+@mixin transition($trans) {
+	-webkit-transition: $trans;
+    -o-transition: $trans;
+    transition: $trans;
+}
+
+@mixin placeholder($classname, $color) {
+	.#{$classname}::-webkit-input-placeholder {
+	   color: $color;
+	}
+
+	.#{$classname}:-moz-placeholder { /* Firefox 18- */
+	   color: $color;  
+	}
+
+	.#{$classname}::-moz-placeholder {  /* Firefox 19+ */
+	   color: $color;  
+	}
+
+	.#{$classname}:-ms-input-placeholder {  
+	   color: $color;  
+	}
+}
+
+
+/* Classes */
+.retina-image {
+  display: none;
+}
+@media  only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (   min--moz-device-pixel-ratio: 2),
+		only screen and (   -moz-min-device-pixel-ratio: 2),
+		only screen and (     -o-min-device-pixel-ratio: 2/1),
+		only screen and (        min-device-pixel-ratio: 2),
+		only screen and (                min-resolution: 192dpi),
+		only screen and (                min-resolution: 2dppx)
+{
+  .normal-image {
+    display: none;
+  }
+  .retina-image {
+    display: inline-block;
+  }
+}

@@ -35,6 +35,17 @@ ul, ol {
 /* Jar Widths */
 /* Responsive Breakpoints */
 /* Grid */
+/* Mixins */
+/* Classes */
+.retina-image {
+  display: none; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .normal-image {
+    display: none; }
+
+  .retina-image {
+    display: inline-block; } }
 .pb-jar-smooth {
   width: 100%;
   overflow: hidden; }
