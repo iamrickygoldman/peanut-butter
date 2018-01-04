@@ -4,6 +4,7 @@ $jar-width-lg:		1080px;
 $jar-width-md:		970px;
 $jar-width-sm:		750px;
 
+
 /* Responsive Breakpoints */
 $screen-xl-min:		1400px;
 
@@ -21,5 +22,11 @@ $screen-tb-min:		481px;
 
 $screen-mb-max:		$screen-tb-min - 1px;
 
+
 /* Grid */
 $gutter-width:		20px;
+
+
+/* Colors */
+$black:				#000;
+$white:				#fff;
