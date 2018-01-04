@@ -1,10 +1,8 @@
 # Peanut Butter
-Peanut Butter is minimalist a front end responsive framework designed for programmers. It provides a grid, a CSS reset,  some basic javascript utilities, and no bloat. The framework can be used out of the box or customized using SCSS.
+Peanut Butter is minimalist a front end responsive framework designed for programmers. It provides a grid, a CSS reset, SCSS mixins, and no bloat. The framework can be used out of the box or customized using SCSS.
 
 ## Installation
     <link href="/path/to/pb-core.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="/path/to/pb-utilities.js"></script>
 
 ## Usage
 #### 12 Column Grid
@@ -46,15 +44,10 @@ The following can all be customized via SCSS variables:
 
 To make updating easily, it is recommended all variables are overridden in the pb-variables-override.scss file and the pb-variables.scss file is left untouched. All custom css should be placed in pb-style.scss. The pb-core.scss file imports all of these files and compiles into pb-core.css which should be included in your project.
 
-#### Javascript Utilities
-At this time, there is only one javascript utility included in Peanut Butter - equal heights. Any time two or more elements - columns or not - need to be equal heights, this plugin will responsively set each element's height to match the tallest. To use, simply apply the attribute "data-pb-height" with the same value to all elements. Here is an example:
+#### SCSS Utilities
+Mixins and utility classes available for use are located in pb-utilities.scss. You may only use the mixins if you are compiling from SCSS, but utility classes are always available.
 
-    <div class="pb-col-tb-4" data-pb-height="example1">
-        
-    </div>
-    <div class="pb-col-tb-4" data-pb-height="example1">
-        
-    </div>
-    <div class="pb-col-tb-4" data-pb-height="example1">
-        
-    </div>
+- **CSS3 transitions**
+- **antialias / subpixel rendering**
+- **input placeholder text color**
+- **retina images**
